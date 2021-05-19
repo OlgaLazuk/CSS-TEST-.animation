@@ -1,0 +1,28 @@
+* { 
+    box-sizing: border-box;
+}
+.wrapper {
+    width: 1400px;
+}
+.square {
+    width: 600px;
+    height: 600px;
+    background-color: red;
+} 
+.circle {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background-color: white;
+    animation-name: wiggle;
+    animation-duration: 5s;
+    animation-iteration-count:infinite;
+}
+@keyframes wiggle {
+    0%   {background-color:rgb(185, 98, 98); left:0px; top:0px;}
+    25%  {background-color:rgb(241, 241, 18); left:400px; top:0px;}
+    50%  {background-color:rgb(7, 7, 167); left:400px; top:400px;}
+    75%  {background-color:rgb(0, 98, 128); left:0px; top:400px;}
+    100% {background-color:rgb(255, 0, 119); left:0px; top:0px;}
+}
